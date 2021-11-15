@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Homepage">
+    <meta name="Keyword" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Aashna Shrestha">
+    <title>Portfolio Homepage</title>
+    <!--Link to the external CSS-->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--Link to the icons for social media-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /*Sets margin, top margin, border, padding and top padding for a particular block of text*/
+        .container{
+            margin: 100px;
+            margin-top: 20px;
+            border: 20px;
+            padding: 100px;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <!--This is the logo-->
+        <div class="center">
+            <a href="./index.html">
+                <!--The logo directs to the index page-->
+                <img src="./images/logo1.png" alt="home" height="50px" width="120px">
+            </a>
+        </div>
+    </section>
+    
+    <section>
+        <!--This is the navigation bar-->
+        <nav class="shadow center">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Webpages/CV.html">About Me</a></li>
+            <li><a href="Webpages/Blog.html">Blog</a></li>
+            <li><a href="Webpages/Research.html">Research</a></li>
+            <li><a href="Webpages/Contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </section>
+
+    <section class="container">
+         <!--Adds flex-->
+         <div class="row">
+            <!--Inserts picture on the left side of the flex -->
+             <div class="col25">
+                 <img src="images/Aashna.jpg" alt="photo" height = "100%" width="100%">
+            </div>
+            
+            <!--Inserts a brief author desccription on the right side of the flex-->
+            <div class="col75">
+                 <div class="card1">
+                     <h1>Hello</h1>
+                     <p>I'm Aashna <br>
+                         Welcome to my portfolio!! <br><br><br>
+                         I'm currently studying BSc (Hons) Computing at Islington College.  
+                     </p>
+                     <p class="center">
+                         To know more about me, check out my cv: <br>
+                         <!--The link directs to the CV page-->
+                         <a href="Webpages/CV.html">About Me</a>
+                      </p>
+                  </div>
+             </div>
+        </div>
+    
+        <!--Displays a text with description of blog.
+        When the button is pressed, the description of research section is displayed.-->
+        <div class="card2 center shadow">
+            <p class="hide center" id="para1">
+                Technology has become a big part of the world. It has been affecting the daily lives of individuals. It has It has advanced so much that any immediate change seems to be possible.<br><br>
+                Find out more about how technology is impacting the world: <br>
+                <!--The link directs to the Blog page-->
+                <a href="Webpages/Blog.html">Blog</a>
+            </p>
+
+            <p class="hide center" id="para2">
+                A creative mind develops great ideas. There are a lot of designers who have built amazing websites. <br><br>
+                Click below to see the designs I chose for this website and the inspiration behind them: <br>
+                <!--The link directs to the research page-->
+                <a href="Webpages/Research.html">Research</a>
+            </p>
+            <!--The buttons change the slide and displays a different paragraph-->
+            <button onclick="change_slide()">&lt;</button>
+            <button onclick="change_slide()">&gt;</button>
+            <script src="script.js"></script>
+        </div>
+    </section>
+
+    <!--This is the footer section with social media information-->
+    <footer class="card1 center">
+        <a href="Webpages/Contact.html">Contact us</a><br>
+         
+        <a href="https://www.facebook.com/aashna.cresta/">
+            <i class="fa fa-facebook" style="font-size:36px"></i>
+        </a>
+        <a href="https://www.instagram.com/aashnaa_/">
+            <i class="fa fa-instagram" style="font-size:36px"></i>
+        </a>
+    </footer>
+
+</body>
+</html>

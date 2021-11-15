@@ -1,0 +1,171 @@
+/*Sets the margin, background colour, font size and font family for the body*/
+body{
+    margin: 10px;                                           
+    background-color: #f3ede9;                            
+    font-size: 20px;                                        
+    font-family: 'Times New Roman', Times, serif               
+}
+
+/*Sets the text colour and font size of the h1 tag*/
+h1{
+    color: black;                                        
+    font-size: 30px;
+}
+
+/*Sets the text colour and font size of the h2 tag*/
+h2{
+    color: black;
+    font-size: 25px;
+}
+
+/*Sets the text colour and font size of the text in a paragraph*/
+p{
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*Sets the colour and text decoration of a link*/
+a{
+    color: #958271;
+    text-decoration: none;             /*No text decorations are added*/
+}
+
+/*Sets the text color of a link, so that it can change when the cursor is hovered over it*/
+a:hover{
+    color: #7185a8;
+}
+
+/*Sets the color of a link, so that it can change when the link is being clicked*/
+a:active{
+   color: #e395af;
+}
+
+/*Sets the background color for the navigation bar*/
+nav{
+    background-color: #d1c9c9;
+}
+
+/*Sets the padding, font size and way in which the list items will be displayed in the navigation bar*/
+nav ul li{
+    padding: 10px;
+    font-size: 25px;
+    display: inline-block;              /*The list in the navigation bar will be displayed in the same line*/
+}
+
+/*Sets the text color of the links in the navigation bar*/
+nav ul li a{
+    
+    color: white;
+}
+
+/*Aligns the text in center*/
+.center{
+    text-align: center;
+}
+
+/*Flex is added*/
+.row{
+    display: flex;
+}
+/*Flex is 25%*/
+.col25{
+    float: left;
+    flex: 25%;
+}
+/*Flex is 75%*/
+.col75{
+    float: left;
+    flex: 75%;
+}
+/*Flex is 40%*/
+.col40{
+    float: left;
+    flex:40%
+}
+/*Flex is 60%*/
+.col60{
+    float: left;
+    flex: 60%;
+}
+
+/*Sets background color, margin and padding for a group of text in the HTML*/
+.card1{
+    background-color: #d5d5d5;
+    padding: 30px; 
+}
+/*Sets background color, margin and padding for a group of text in the HTML*/
+.card2{
+    background-color: #f7d5ef;
+    margin: 10px;
+    padding: 30px;   
+}
+
+/*Adds shadow around a box*/
+.shadow{
+    box-shadow: grey 0px 10px 30px 0px;
+}
+
+/*Sets margin, top margin and padding of a particular group of text*/
+.group{
+    margin: 150px;
+    margin-top: 30px;
+    padding: 100px;
+}
+
+/*Sets the type in which an unordered list will be displayed*/
+ul{
+    list-style-type: none;
+}
+
+/*Sets the width, padding, margin and font size of the area where a short text is to be inserted*/
+input[type=text] {
+    width: 300px;
+    padding: 8px 16px;
+    margin: 8px 0;
+    font-size: 15px;
+  }
+/*Sets the width, padding, margin and font size of the area where a block of text is to be inserted*/
+input[type=textarea]{
+    width:300px;
+    height: 200px;
+    padding: 8px 16px;
+    margin: 8px 0;
+    font-size: 15px;
+}
+/*Sets the margin, padding and font size of the submit button*/
+input[type=submit]{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+/*Aligns the text heading to left*/
+th{
+    float: left;
+}
+/*Hides a particular group of text*/
+.hide{
+    display: none;
+}
+/*Sets padding, font size, width, alignment of text, margin and text decoration of social media icons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+/*Sets icon color of facebook to black*/
+  .fa-facebook {
+    color: black
+  }
+/*Sets icon color of instagram to black*/
+  .fa-instagram {
+    color: black
+  }
+  
